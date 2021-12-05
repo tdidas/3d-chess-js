@@ -1,14 +1,19 @@
 <html>
     <body style="padding: 0; margin: 0; overflow-y: hidden;">
+        <div style="position: absolute; color: white; top: 0; left: 0; z-index: 2000;" id="text-output"></div>
         <canvas id="canvas"></canvas>
 
         <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" integrity="sha512-dLxUelApnYxpLt6K2iomGngnHO83iUvZytA3YjDUCjT0HDOHKXnVYdf3hU4JjM8uEhxf9nD1/ey98U3t2vZ0qQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
         <script type="text/javascript" src="../three.min.js"></script>
 
+        <script type="text/javascript" src="./object-picking.js"></script>
         <script type="text/javascript" src="./renderer.js"></script>
         <script type="text/javascript" src="./scene.js"></script>
 
-        <script type="text/javascript" src="./figures/pawn.js"></script>
+        <script type="text/javascript" src="./gameObjects/figures/pawn.js"></script>
+        <script type="text/javascript" src="./gameObjects/figures/bishop.js"></script>
+        <script type="text/javascript" src="./gameObjects/figures/rook.js"></script>
+        <script type="text/javascript" src="./gameObjects/tile.js"></script>
 
         <script type="text/javascript" src="./app.js"></script>
 

@@ -17,11 +17,16 @@ const renderer = new THREE.WebGLRenderer({ canvas: canvas, antialias: true });
 
 renderer.setSize(window.innerWidth, window.innerHeight);
 
+
+const pickHelper = new PickHelper(canvas);
+
 function render(time) {
     time *= 0.001;   
     containerGroup.rotation.y = 0.1 * time;
 
     renderer.render(scene, camera);
+
+    pickHelper.pick(scene, camera, time);
 
     requestAnimationFrame(render);
 }
